@@ -1,0 +1,755 @@
+@font-face {
+    font-family: "petShop";
+    src: url("../myfonts/satisfy.woff2")format("woff2");
+    src: url("../myfonts/satisfy.woff")format("woff");
+    src: url("../myfonts/satisfy.ttf")format("truetype");
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+.container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#head {
+    background-color: #000;
+    padding: 10px 0;
+    width: 100%;
+    font-family: "petShop";
+    position: fixed;
+    top: 0;
+}
+#head div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#head div.container h3 {
+    color: #7ab92d;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.4rem;
+    display: flex; 
+    justify-content: center;
+    align-items: end;  
+}
+#head div.container h3:hover {
+    cursor: pointer; 
+    color: #fff;
+}
+#head div.container h3 img {
+    height: 40px;
+    margin-right: 5px;
+}
+#head div.container label i{
+    color: #7ab92d;
+    border: 2px solid #7ab92d;
+	font-size: 1rem;
+	width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 48%;
+    cursor: pointer;
+}
+#head div.container label i:hover {
+    color: #fff;
+}
+#head div.container nav {
+    width: 100%;
+    padding: 15px 0;
+}
+#head div.container nav a {
+    color: #c2c2c2;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 0.95rem;
+    display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+#head div.container nav a.active {
+    color: #fff;
+}
+#head div.container nav>a:hover {
+    background-color: #7ab92d;
+    color: #fff;
+}
+#menucontrol {
+	display: none;
+}
+#menucontrol+nav {
+	display:none;
+}
+#menucontrol:checked+nav {
+	display: block;
+}
+#sec-1 {
+    background: url("../images/sec_1_imgs/Banner-1.jpg") no-repeat  center;
+    height: 100vh;
+    display: flex;
+	align-items: center;
+}
+#sec-1 div.container article h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "petShop";
+    text-transform: capitalize;
+}
+#sec-1 div.container article small {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 50;
+    margin-bottom: 10px;
+    font-family: "petShop";
+    text-transform: capitalize;
+    display: block;
+}
+#sec-1 div.container article p {
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+#sec-1 div.container article a ,
+#sec-2-aboutUs .aboutUs div.container aside:last-child div div a {
+    background-color: #fff;
+    color: #7ab92d;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: .9rem;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 140px;
+    display: flex;
+}
+#sec-1 div.container article a i {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right: 5px;
+}
+#sec-1 div.container article a:hover ,
+#sec-2-aboutUs .aboutUs div.container aside:last-child div div a:hover {
+    text-decoration: underline;
+}
+#sec-2-aboutUs , #sec-3-services{
+    background-color: #efeded;
+}
+#sec-2-aboutUs .aboutUs div.container ,
+#sec-3-services .services div.container{
+    padding: 15px 0 30px 0;
+}
+#sec-2-aboutUs .aboutUs div.container figure {
+    overflow: hidden;
+}
+#sec-2-aboutUs .aboutUs div.container figure img{
+    width: 100%;
+    border: 1.6px solid #7ab92d;
+    padding: 4px;
+    border-radius: 4px;
+}
+#sec-2-aboutUs .aboutUs div.container figure img:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+#sec-2-aboutUs .aboutUs div.container aside ,
+#sec-3-services .services div.container header ,
+#sec-5-price div.container header ,
+#sec-6-blog div.container header {
+    text-align: center;
+}
+#sec-2-aboutUs .aboutUs div.container aside article .top strong ,
+#sec-3-services .services div.container header strong ,
+#sec-4-products div.container header strong,
+#sec-5-price div.container header strong ,
+#sec-6-blog div.container header strong {
+    color: #7ab92d;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0 5px 0;
+    display: block;
+}
+#sec-2-aboutUs .aboutUs div.container aside article .top h2 ,
+#sec-3-services .services div.container header h2 ,
+#sec-4-products div.container header h2 ,
+#sec-5-price div.container header h2 ,
+#sec-6-blog div.container header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#sec-2-aboutUs .aboutUs div.container aside>p {
+    font-size: 1rem;
+    font-weight: 440;
+    margin-bottom: 10px;
+    color: #616060;
+    text-align: center;
+}
+#sec-2-aboutUs .aboutUs div.container aside div.box {
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+#sec-2-aboutUs .aboutUs div.container aside:last-child div div {
+    display: inline-block;
+}
+#sec-2-aboutUs .aboutUs div.container aside:last-child div div a {
+    font-style: normal;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    margin: 0px 0 15px 0;
+    padding: 5px 0;
+}
+#sec-2-aboutUs .aboutUs div.container aside:last-child div div a:hover {
+    background-color: transparent;
+}
+#sec-2-aboutUs .aboutUs div.container aside:last-child div p {
+    color: #616060;
+}
+#sec-3-services .services div.container .content article {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+#sec-3-services .services div.container .content article i {
+    margin-right: 20px;
+    color: #616060;
+    font-size: 3rem;
+}
+#sec-3-services .services div.container .content article aside h6 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 450;
+    text-transform: capitalize;
+}
+#sec-3-services .services div.container .content article aside p {
+    text-align: justify;
+    color: #616060;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#sec-3-services .services div.container .content article aside a ,
+#sec-4-products div.container a {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #7ab92d;
+    text-transform: uppercase;
+    display: block;
+    text-align: right;
+}
+#sec-3-services .services div.container .content article aside a:hover {
+    text-decoration: underline;
+}
+#sec-4-products {
+    background: url("../images/sec_4_img/Banner-2.jpg") no-repeat 0px center/cover;
+    height: 100vh;
+    display: flex;
+	align-items: center;
+}
+#sec-4-products div.container header {
+    border-left: 4px solid #191919;
+    padding-left: 30px;
+}  
+#sec-4-products div.container header strong ,
+#sec-4-products div.container header h2 {
+    color: #191919;
+}
+#sec-4-products div.container p {
+    text-align: justify;
+    max-width: 90%;
+}
+#sec-4-products div.container a {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #191919;
+    padding: 10px 0;
+    margin-top: 50px;
+    max-width: 120px;
+    border-radius: 20px;
+    text-transform: capitalize; 
+}
+#sec-4-products div.container a:hover {
+    background-color: #000;
+}
+#sec-5-price div.container {
+    padding: 50px 0;
+}
+#sec-5-price div.container .content article {
+    width: 100%;
+    background-color: #efeded;
+    border-radius: 8px;
+    padding: 25px 0px;
+    margin-bottom: 20px;
+    /* border: 1px dashed #000;
+    padding: 4px; */
+}
+#sec-5-price div.container .content article h4 {
+    color: #7ab92d;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#sec-5-price div.container .content article h3 {
+    color: #fff;
+    background-color: #7ab92d;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#sec-5-price div.container .content article h3 sup small , sub small {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+#sec-5-price div.container .content article ul {
+    list-style-type: none;
+    padding: 25px 20px;
+    color: #616060;
+}
+#sec-5-price div.container .content article ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#sec-5-price div.container .content article ul li i{
+    color: #7ab92d;
+}
+#sec-5-price div.container .content article ul li:nth-child(3) i ,
+#sec-5-price div.container .content article ul li:nth-child(4) i{
+    color: #f43900;
+}
+#sec-5-price div.container .content article a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #7ab92d;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-top: 20px;
+    max-width: 140px;
+    border-radius: 20px;
+    text-transform: capitalize; 
+}
+#sec-5-price div.container .content article a:hover {
+    background-color: #65a11c;
+}
+#sec-5-price div.container .content article:nth-child(2) h4 {
+    color: #191919;
+}
+#sec-5-price div.container .content article:nth-child(2) h3 ,
+#sec-5-price div.container .content article:nth-child(2) a {
+    background-color: #191919;
+}
+#sec-5-price div.container .content article:nth-child(2) a:hover {
+    background-color: #000;
+}
+#sec-5-price div.container .content article:nth-child(2) ul li:nth-child(3) i {
+    color: #7ab92d;
+}
+#sec-5-price div.container .content article:nth-child(3) ul li:nth-child(3) i ,
+#sec-5-price div.container .content article:nth-child(3) ul li:nth-child(4) i {
+    color: #7ab92d;
+}
+#sec-6-blog div.container .content figure {
+    margin-bottom: 20px;
+    background-color: #efeded;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#sec-6-blog div.container .content figure img{
+    max-width: 100%;
+    display:block;
+}
+#sec-6-blog div.container .content figure figcaption {
+    padding: 20px;
+}
+#sec-6-blog div.container .content figure figcaption .cap-head {
+    color: #7ab92d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #7ab92d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sec-6-blog div.container .content figure figcaption .cap-head small{
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 45%;
+    text-align: center;
+}
+#sec-6-blog div.container .content figure figcaption .cap-head small i{
+    margin-right: 8px;
+}
+#sec-6-blog div.container .content figure figcaption .cap-content {
+    text-align: center;
+}
+#sec-6-blog div.container .content figure figcaption .cap-content h5 {
+    font-size: 1.2rem;
+    max-width: 50%;
+    margin: 0 auto;
+    color: #191919;
+}
+#sec-6-blog div.container .content figure figcaption .cap-content p {
+    font-size: 1.1rem;
+    color: #616060;
+    margin: 20px 0 30px 0;
+}
+#sec-6-blog div.container .content figure figcaption a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: #7ab92d;
+        border: 1px solid #7ab92d;
+        font-weight: 500;
+        padding: 10px 0;
+        margin-top: 20px;
+        max-width: 140px;
+        border-radius: 20px;
+        text-transform: capitalize; 
+}
+#sec-6-blog div.container .content figure figcaption  a:hover {
+    background-color: #7ab92d;
+    color: #fff;
+}
+#sec-6-blog div.container {
+    padding-bottom: 50px;
+}
+#sec-7-footer{
+    background-color: #efeded;
+    padding: 30px 0;
+}
+#sec-7-footer div.container footer {
+    color: #191919;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: .6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#sec-7-footer div.container footer article {
+    margin-bottom: 20px;
+}
+#sec-7-footer div.container footer article h4 {
+    text-transform: uppercase;
+    border-left: 2px solid #7ab92d;
+    padding-left: 10px;
+    font-size: .7rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#sec-7-footer div.container footer article p {
+    max-width: 130px;
+    text-align: justify;
+    color: #616060;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#sec-7-footer div.container footer article ul {
+    list-style-type: none;
+}
+#sec-7-footer div.container footer article ul li {
+    margin-bottom: 5px;
+}
+#sec-7-footer div.container footer article ul li a {
+    text-decoration: none;
+    color: #616060;
+    font-weight: 500;
+}
+#sec-7-footer div.container footer article ul li i {
+    color: #7ab92d;
+    margin-right: 5px;
+}
+#sec-7-footer div.container footer article ul li input {
+    margin-bottom: 20px;
+    border: .5px solid #dad9d9;
+    padding: 15px 10px;
+    font-size: .6rem;
+    font-weight: 700;
+    outline: none;
+    margin-bottom: 10px;
+}
+#sec-7-footer div.container footer article ul li input[type="email"] {
+    color: #616060;
+}
+#sec-7-footer div.container footer article ul li input[type="email"]:hover {
+    border: .5px solid #7ab92d;
+}
+#sec-7-footer div.container footer article ul li input[type="submit"] {
+    color: #fff;
+    background-color: #7ab92d;
+    cursor: pointer;
+    position: relative;
+    left: -5px;
+}
+#sec-7-footer div.container footer article ul li input[type="submit"]:hover {
+    background-color: #65a11c;
+}
+#sec-7-footer div.container footer article:last-child h4:last-child {
+    border: none;
+    padding: 0;
+}
+#sec-7-footer div.container footer article:last-child i {
+    border: 1px solid #7ab92d;
+    font-size: .9rem;
+    padding: 5px;
+}
+#sec-7-footer div.container .footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: scroll;
+}
+#sec-7-footer div.container .footer-bottom a , span{
+    text-decoration: none;
+    color: #616060;
+    margin-left: 5px;
+    font-size: .8rem;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #sec-2-aboutUs .aboutUs div.container figure img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+	.container {
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    #sec-1 div.container article a {
+        display: inline-block;
+        background-color: #fff;
+        color: #7ab92d;
+        text-decoration: none;
+        border-radius: 100px;
+        font-size: .9rem;
+        padding: 10px 25px;
+        margin: 10px 10px 10px 0;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-style: italic;
+    }
+    
+    #sec-2-aboutUs .aboutUs div.container aside:last-child div div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside:last-child div div a {
+        display: inline-block;
+        width: 330px;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside .top ,
+    #sec-3-services .services div.container header ,
+    #sec-5-price div.container header ,
+    #sec-6-blog div.container header {
+        max-width: 57%;
+        text-align: start;
+    }
+    #sec-3-services .services div.container header h2 ,
+    #sec-5-price div.container header h2 ,
+    #sec-6-blog div.container header h2 {
+        font-size: 2rem;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside article .top ,
+    #sec-3-services .services div.container header ,
+    #sec-5-price div.container header ,
+    #sec-6-blog div.container header {
+        border-left: 4px solid #7ab92d;
+        padding-left: 30px;
+    }
+    #sec-6-blog div.container .content figure {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-6-blog div.container .content figure img {
+        max-width: 35%;
+        /* height: 100vh; */
+        background-color: #f43900;
+    }
+    #sec-6-blog div.container .content figure figcaption {
+        width: 62%;
+    }
+    #sec-6-blog div.container .content figure figcaption .cap-head small ,
+    #sec-6-blog div.container .content figure figcaption .cap-content p{
+        text-align: start;
+    }
+    #sec-6-blog div.container .content figure figcaption .cap-content h5{
+        text-align: start;
+        max-width: 70%;
+        margin: 0;
+    }
+    #sec-6-blog div.container .content figure figcaption a {
+        margin-right: 0;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.container {
+		width: 920px;
+	}
+    #head div.container {
+		flex-wrap: nowrap;
+	}
+
+	#head div.container nav {
+		padding: 0;
+		align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: end;
+        max-width: 70%;
+	}
+	#head div.container label i{
+		display: none;
+	}
+	
+	#menucontrol+nav, #menucontrol:checked+nav{
+		display: flex;
+	}
+	#head div.container nav>a {
+		padding: 10px 20px;	
+	}
+	#head div.container nav>a:hover {
+		background-color: #7ab92d;
+        color: #fff;
+	}
+    #sec-1 {
+        background: url("../images/sec_1_imgs/Banner-1.jpg") no-repeat center center/cover;
+    }
+    #sec-2-aboutUs .aboutUs div.container {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    #sec-2-aboutUs .aboutUs div.container figure img{
+        max-width: 100%;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside{
+        max-width: 55%;
+        padding-left: 50px;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside p {
+        text-align: start;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside article .top strong {
+        margin: 0px 0 5px 0;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside:last-child div div a {
+        display: inline-block;
+    }
+    #sec-2-aboutUs .aboutUs div.container aside:last-child div div a:first-child {
+        margin-right: 10px;
+    }
+    #sec-3-services .services div.container .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    #sec-3-services .services div.container .content article {
+        width: 49.4%;
+    }
+    #sec-4-products {
+        background-image: url("../images/sec_4_img/Banner-2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    #sec-5-price div.container .content {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #sec-5-price div.container .content article {
+        max-width: 32%;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.container {
+		width: 1140px;
+	}
+    #sec-3-services .services div.container .content article {
+        width: 32.8%;
+    }
+    #sec-6-blog div.container .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    #sec-6-blog div.container .content figure {
+        max-width: 49%;
+    }
+    #sec-6-blog div.container .content figure {
+        max-width: 49%;
+    }
+
+
+}
+@media (min-width: 1400px) {  
+	.container {
+		width: 1340px;
+	}
+    #sec-2-aboutUs .aboutUs div.container aside:last-child div div a {
+        display: inline-block;
+        width: 400px;
+    }
+
+}
+
